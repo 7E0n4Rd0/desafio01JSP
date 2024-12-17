@@ -5,11 +5,11 @@ import java.util.Objects;
 public class Order {
     private Integer code;
     private Double basic;
-    private Integer discount;
+    private Double discount;
 
     public Order(){}
 
-    public Order(Integer code, Double basic, Integer discount) {
+    public Order(Integer code, Double basic, Double discount) {
         this.code = code;
         this.basic = basic;
         this.discount = discount;
@@ -31,11 +31,11 @@ public class Order {
         this.basic = basic;
     }
 
-    public Integer getDiscount() {
+    public Double getDiscount() {
         return discount;
     }
 
-    public void setDiscount(Integer discount) {
+    public void setDiscount(Double discount) {
         this.discount = discount;
     }
 
