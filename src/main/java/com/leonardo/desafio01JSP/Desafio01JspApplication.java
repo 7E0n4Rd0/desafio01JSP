@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Desafio01JspApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(Desafio01JspApplication.class, args);
 	}
 
