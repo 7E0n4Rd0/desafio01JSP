@@ -1,0 +1,19 @@
+package com.leonardo.desafio01JSP.services;
+
+import com.leonardo.desafio01JSP.entities.Order;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ShippingService {
+
+    public double shipment(Order order){
+        if(order.getBasic() < 100.00){
+            return 20.00;
+        }else if(order.getBasic() >= 100.00 &&  order.getBasic() < 200.00){
+            return 10.00;
+        }else{
+            return 0.0;
+        }
+    }
+
+}

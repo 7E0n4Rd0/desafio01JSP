@@ -50,4 +50,13 @@ public class Order {
     public int hashCode() {
         return Objects.hashCode(code);
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "code=" + code +
+                ", basic=" + basic +
+                ", discount=" + discount +
+                '}';
+    }
 }
