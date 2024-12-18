@@ -10,7 +10,12 @@ public class OrderService {
     @Autowired
     private ShippingService shippingService;
 
+    /**
+     * Method responsible to calculate the total of the order, with discount and shipping tax.
+     * @param order obj
+     * @return result of the calculation
+     */
     public double total(Order order){
-        return 0.0;
+        return order.getBasic() - (order.getDiscount()/100 * order.getBasic()) + shippingService.shipment(order);
     }
 }
